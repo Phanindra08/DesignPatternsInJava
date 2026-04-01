@@ -1,6 +1,6 @@
-package edu.charlotte.design_patterns.factory_design_pattern.factory;
+package edu.charlotte.design_patterns.factory_design_pattern.single_product.factory;
 
-import edu.charlotte.design_patterns.factory_design_pattern.notifications.Notification;
+import edu.charlotte.design_patterns.factory_design_pattern.single_product.notifications.Notification;
 
 public abstract class NotificationFactory {
 

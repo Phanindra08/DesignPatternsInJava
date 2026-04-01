@@ -1,4 +1,4 @@
-package edu.charlotte.design_patterns.factory_design_pattern.notifications;
+package edu.charlotte.design_patterns.factory_design_pattern.single_product.notifications;
 
 public class SMSNotification implements Notification {
     @Override

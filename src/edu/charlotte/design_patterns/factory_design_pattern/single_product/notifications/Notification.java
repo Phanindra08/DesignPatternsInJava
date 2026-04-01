@@ -1,4 +1,4 @@
-package edu.charlotte.design_patterns.factory_design_pattern.notifications;
+package edu.charlotte.design_patterns.factory_design_pattern.single_product.notifications;
 
 /**
  * It is a common interface for all notification types.
