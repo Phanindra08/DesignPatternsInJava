@@ -1,7 +1,7 @@
 package edu.charlotte.design_patterns.builder_design_pattern.classic_builder_pattern;
 
 public class GamingComputerBuilder implements Builder {
-    private Computer computer = new Computer();
+    private final Computer computer = new Computer();
 
     @Override
     public void buildCPU() {
