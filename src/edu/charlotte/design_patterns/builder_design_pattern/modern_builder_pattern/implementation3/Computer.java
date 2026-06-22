@@ -6,10 +6,10 @@ class Computer {
     private final String ram;
     private final String storage;
 
-    public Computer(GamingComputerBuilder gamingComputerBuilder) {
-        this.cpu = gamingComputerBuilder.cpu;
-        this.ram = gamingComputerBuilder.ram;
-        this.storage = gamingComputerBuilder.storage;
+    private Computer(Builder builder) {
+        this.cpu = builder.cpu;
+        this.ram = builder.ram;
+        this.storage = builder.storage;
     }
 
     public void displayInfo() {
@@ -19,30 +19,26 @@ class Computer {
                 + "\tStorage: " + storage + "\n");
     }
 
-    public static class GamingComputerBuilder implements Builder {
+    public static class Builder {
         private String cpu;
         private String ram;
         private String storage;
 
-        @Override
         public Builder setCPU(String cpu) {
             this.cpu = cpu;
             return this;
         }
 
-        @Override
         public Builder setRAM(String ram) {
             this.ram = ram;
             return this;
         }
 
-        @Override
         public Builder setStorage(String storage) {
             this.storage = storage;
             return this;
         }
 
-        @Override
         public Computer build() {
             return new Computer(this);
         }

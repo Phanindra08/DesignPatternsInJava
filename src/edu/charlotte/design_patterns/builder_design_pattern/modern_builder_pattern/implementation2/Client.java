@@ -1,5 +1,6 @@
 package edu.charlotte.design_patterns.builder_design_pattern.modern_builder_pattern.implementation2;
 
+// Separate Builders + pass individual values -> Common
 public class Client {
     public static void main(String[] args) {
         Computer gamingComputer = new GamingComputerBuilder()

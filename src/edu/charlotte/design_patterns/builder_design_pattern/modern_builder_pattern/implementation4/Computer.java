@@ -6,7 +6,7 @@ class Computer {
     private final String ram;
     private final String storage;
 
-    public Computer(String cpu, String ram, String storage) {
+    private Computer(String cpu, String ram, String storage) {
         this.cpu = cpu;
         this.ram = ram;
         this.storage = storage;
